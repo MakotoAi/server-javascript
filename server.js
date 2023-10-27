@@ -3,7 +3,7 @@ const app = express();
 const port = 8069;
 
 app.get('/nama', (req, res) => {
-  res.send('Nama saya Ahmad Hanif Nuraidzin');
+  res.send('Nama saya Ahmad Hanif Nuraidzin, biasa di panggil Hanif');
 });
 
 app.get('/asal', (req, res) => {
