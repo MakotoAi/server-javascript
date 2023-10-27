@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.send('Halo ini web pertama saya');
 });
 
 app.get('/get-data', (req, res) => {
@@ -16,7 +16,7 @@ app.get('/get-data', (req, res) => {
 });
 
 app.get('/buat-file', (req, res) => {
-  fs.writeFile('file.txt', 'Hello World', (err) => {
+  fs.writeFile('perkenalan.txt', 'Halo, nama saya Ahmad Hanif nuraidzin', (err) => {
     if (err) {
       res.status(500).send('Gagal membuat file.');
     } else {
